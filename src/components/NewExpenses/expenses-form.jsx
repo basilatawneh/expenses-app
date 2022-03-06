@@ -24,11 +24,13 @@ const ExpensesForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onAddHandler({
+    const xyz = {
       title: inputValues.title,
       amount: inputValues.amount,
       date : new Date(inputValues.date)
-    })
+    };
+
+    props.onAddHandler(xyz);
     setInputValues({
       title: '',
       amount: 0,
