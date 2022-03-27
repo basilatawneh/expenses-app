@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import NewExpense from './components/NewExpense/NewExpense';
-import Expenses from './components/Expenses/Expenses';
+import NewExpense from './class-based-components/NewExpense/NewExpense';
+import Expenses from './class-based-components/Expenses/Expenses';
 
 const App = () => {
   const [expenses, setExpenses] = useState([]);
